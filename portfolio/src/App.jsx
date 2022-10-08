@@ -19,8 +19,8 @@ const App = () => {
         console.log(window.scrollY)
         let scroll = window.scrollY
 
-        logo.style.left = `${scroll}px`;
-        textMain.style.right = `${scroll}px`;
+        logo.style.left = `${scroll/5}px`;
+        textMain.style.right = `${scroll/3}px`;
       })
   }
 
@@ -28,6 +28,7 @@ const App = () => {
     <>
       <Navbar/>
       <Main />
+      <hr className='w-[80%] h-[1px] bg-black'/>
       <AboutMe />
       <Projects />
       <Skills />
