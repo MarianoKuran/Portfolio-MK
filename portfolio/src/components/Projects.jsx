@@ -24,7 +24,7 @@ const Projects = () => {
           <h3 className='mt-2 font-semibold border-b-2 border-[#ddd]'>PORYECTO 1</h3>
           <p className='mt-5 text-[#222] italic'>descripcion del proyecto</p>
         </div>
-        {/* ICONS */}
+        {/* BUTTONS */}
         <div className='flex flex-col justify-around h-full w-[10%]'>
           <a href="https://github.com/MarianoKuran" target="_blank">
             <div id='icon-code-1' className='flex items-center justify-center p-1 h-[50px] w-[50px] rounded-[50%] bg-[#f6f6f6] shadow-md'>
@@ -36,7 +36,6 @@ const Projects = () => {
                 <GiBoltEye size={35} fill={"#333"}/> 
             </div>
           </a>
-          
         </div>
       </div>
     </section>
