@@ -5,6 +5,7 @@ import Main from "./components/Main";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import {IoMdArrowDropupCircle} from "react-icons/io"
 
 const App = () => {
   window.onload = () => {
@@ -12,7 +13,9 @@ const App = () => {
     const textMain = document.querySelector("#text-main");
     const About_me = document.querySelector("#About_me");
     const about_text = document.querySelector("#about_text");
+    const return_top = document.querySelector("#return_top");
 
+    return_top.style.display = "none";
     logo.style.position = "relative";
     textMain.style.position = "relative";
     about_text.style.position = "relative";
@@ -28,15 +31,19 @@ const App = () => {
       if( 0 <= scroll && scroll <= 125 ){
         logo.style.opacity = `${1 - scroll / 750}`;
         textMain.style.opacity = `${1 - scroll / 750}`;
+        return_top.style.display = 'none'
       } else if( 126 <= scroll && scroll <= 250 ){
         logo.style.opacity = `${1 - scroll / 650}`;
         textMain.style.opacity = `${1 - scroll / 650}`;
+        return_top.style.display = 'flex'
       } else if( 251 <= scroll && scroll <= 375 ){
         logo.style.opacity = `${1 - scroll / 550}`;
         textMain.style.opacity = `${1 - scroll / 550}`;
+        return_top.style.display = 'flex'
       } else{
         logo.style.opacity = `${1 - scroll / 550}`;
         textMain.style.opacity = `${1 - scroll / 550}`;
+        return_top.style.display = 'flex'
       }
       /* effects about me section */
 
@@ -62,6 +69,7 @@ const App = () => {
     <>
       <Navbar />
       <Main />
+      <a id="return_top" href="#top"><IoMdArrowDropupCircle size={55} fill='#333' className="fixed top-[550px] right-[100px]"/></a> 
       <hr className="w-[80%] h-[1px] bg-black" />
       <AboutMe />
       <hr className="w-[80%] h-[1px] bg-black" />
