@@ -41,31 +41,18 @@ const Skills = () => {
   ]
 
   return (
-    <section className="flex flex-col items-center w-full h-[100vh] p-5">
+    <section id="Skills" className="flex flex-col items-center w-full h-[100vh] p-5">
       <div className='flex flex-col items-center w-[70%] h-full '>
         <div className="flex items-start w-[70%] h-[100px] my-7">
-          <img id="Skills" src={Skills_png} alt="Skills" className="relative z-0 h-full w-[25%] drop-shadow-xl mx-auto" />        
+          <img  src={Skills_png} alt="Skills" className="relative z-0 h-full w-[25%] drop-shadow-xl mx-auto" />        
         </div>
-        <div className='flex gap-5'>
-          <div className='flex flex-wrap items-center justify-center w-[50%] h-[300px] gap-3 p-4 '>
+        <div className='flex items-center justify-center '>
+          <div className='flex flex-wrap items-center justify-center w-[60%] h-[300px] gap-3 p-4 '>
             <p className='flex justify-center w-full py-3 text-4xl text-[#333] font-bolder rounded-md shadow-md'>TechSkills</p>
               {skillsT.map((s)=>{
                 return(
                   <div className='flex flex-col items-center'>
-                    <div className='flex items-center justify-center h-[60px] w-[60px] shadow-md rounded-md bg-[#f6f6f6]'>
-                      {s.icon ? s.icon : null}
-                    </div>
-                    <p className='text-sm'>{s.name}</p>
-                  </div>
-                )
-              })}
-          </div>
-          <div className='flex flex-wrap items-center justify-center w-[50%] h-[300px] gap-3 p-4'>
-            <p className='flex justify-center w-full py-3 text-4xl text-[#333] font-bolder rounded-md shadow-md'>SoftSkills</p>
-            {skillsS.map((s)=>{
-                return(
-                  <div className='flex flex-col items-center'>
-                    <div className='flex items-center justify-center h-[60px] w-[60px] shadow-md rounded-md bg-[#f6f6f6]'>
+                    <div className='flex items-center justify-center h-[80px] w-[80px] shadow-md rounded-md bg-[#f6f6f6] cursor-pointer'>
                       {s.icon ? s.icon : null}
                     </div>
                     <p className='text-sm'>{s.name}</p>

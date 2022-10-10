@@ -7,10 +7,10 @@ const Projects = () => {
 
 
   return (
-    <section className="flex flex-col items-center w-full h-[100vh] p-5">
+    <section id="Works" className="flex flex-col items-center w-full h-[100vh] p-5">
       
       <div className="flex flex-col items-start w-[70%] h-[220px] mt-14">
-        <img id="Works" src={Works} alt="Works" className="relative z-0 h-[50%] w-[25%] drop-shadow-xl mx-auto" />        
+        <img src={Works} alt="Works" className="relative z-0 h-[50%] w-[25%] drop-shadow-xl mx-auto" />        
       </div>
 
       {/* CARD */}

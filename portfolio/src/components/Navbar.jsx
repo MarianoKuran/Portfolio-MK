@@ -15,10 +15,10 @@ const Navbar = () => {
 
           <img src={logo} alt="Mariano Kuran logo personal" className='h-full w-[130px] ml-2' />
 
-          <a href="#" className='flex items-center justify-center w-[50%] h-full text-lg text-[#555] tracking-wider duration-200 hover:border-b-2 hover:border-[#666] hover:font-semibold hover:drop-shadow-sm'>
+          <a href="#Skills" className='flex items-center justify-center w-[50%] h-full text-lg text-[#555] tracking-wider duration-200 hover:border-b-2 hover:border-[#666] hover:font-semibold hover:drop-shadow-sm'>
             <div> Skills</div>
           </a>
-          <a href="#" className='flex items-center justify-center w-[50%] h-full text-lg text-[#555] tracking-wider duration-200 hover:border-b-2 hover:border-[#666] hover:font-semibold hover:drop-shadow-sm'>
+          <a href="#Contact" className='flex items-center justify-center w-[50%] h-full text-lg text-[#555] tracking-wider duration-200 hover:border-b-2 hover:border-[#666] hover:font-semibold hover:drop-shadow-sm'>
             <div>Contact</div>
           </a>
         </div>
