@@ -23,7 +23,7 @@ const Main = () => {
           <MdContactPage size={52} fill="#333" className="fixed" />
         </a>
         <a
-          href="https://drive.google.com/file/d/1DmzJ9oNOj4iRMYmL7tFmav-LQzJegWI_/view?usp=sharing"
+          download href="https://drive.google.com/file/d/1DmzJ9oNOj4iRMYmL7tFmav-LQzJegWI_/view?usp=sharing"
           target="_blank"
           className="relative opacity-0 top-[5px] right-[-23px] w-fit h-[65px] pt-11 duration-200 hover:opacity-100 cursor-pointer"
         >
