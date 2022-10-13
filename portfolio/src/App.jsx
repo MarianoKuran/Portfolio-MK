@@ -3,7 +3,7 @@ import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Main from "./components/Main";
 import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
+import Projects from "./components/Works/Projects";
 import Skills from "./components/Skills";
 
 const App = () => {
