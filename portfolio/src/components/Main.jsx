@@ -1,6 +1,7 @@
 import React from "react";
 import MKlogo from "../images/logoMK.svg"
-import { IoMdArrowDropupCircle } from "react-icons/io";
+import { IoMdArrowDropupCircle, IoLogoGithub } from "react-icons/io";
+import { SiLinkedin } from "react-icons/si"
 import { MdContactPage } from "react-icons/md";
 import cv from "../media/Mariano Kuran - Frontend Developer.pdf"
 
@@ -19,24 +20,62 @@ const Main = () => {
       >
         Fullstack Developer
       </h1>
-      <div className="fixed top-[480px] right-[105px] flex flex-col items-center justify-center h-fit w-fit">
-        <a>
-          <MdContactPage size={52} fill="#333" className="fixed" />
-        </a>
-        <a
-          download href={cv}
-          target="_blank"
-          className="relative opacity-0 top-[5px] right-[-23px] w-fit h-[65px] pt-11 duration-200 hover:opacity-100 cursor-pointer"
-        >
-          Download CV
-        </a>
-        <a id="return_top" href="#top">
+      <div className="fixed bottom-[60px] right-[50px] h-fit w-[80px]">
+        <div className="relative flex flex-col h-fit w-full bottom-[0px] left-[0px] mb-2">
+          <a>
+            <SiLinkedin size={40} fill="#333" className="fixed ml-4" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mariano-kuran-809642236"
+            target="_blank"
+            className="opacity-0 w-full h-[65px] pt-11 pl-1 duration-200 hover:opacity-100 cursor-pointer"
+          >
+            LinkedIn
+          </a>
+        </div>
+        <div className="relative flex flex-col h-fit w-full bottom-[0px] left-[0px] mb-2">
+          <a>
+            <IoLogoGithub size={48} fill="#333" className="fixed ml-3" />
+          </a>
+          <a
+            href="https://github.com/MarianoKuran"
+            target="_blank"
+            className="opacity-0 w-full h-[65px] pt-12 pl-[10px] duration-200 hover:opacity-100 cursor-pointer"
+          >
+            Github
+          </a>
+        </div>
+        <div className="relative flex flex-col h-fit w-full bottom-[0px] left-[0px] mt-3">
+          <a>
+            <MdContactPage size={50} fill="#333" className="fixed ml-3" />
+          </a>
+          <a
+            download href={cv}
+            target="_blank"
+            className="text-center opacity-0 w-full h-[90px] pt-12 duration-200 hover:opacity-100 cursor-pointer"
+          >
+            Download cv
+          </a>
+        </div>
+        <div className="relative flex flex-col h-fit w-full bottom-[0px] left-[0px] mt-16">
+          <a>
+            <IoMdArrowDropupCircle size={52} fill="#333" className="fixed ml-3" />
+          </a>
+          <a
+            href="#top"
+            target="_blank"
+            className="opacity-0 w-full h-[65px] pl-[15px] pt-12 duration-200 hover:opacity-100 cursor-pointer"
+          >
+            To top
+          </a>
+        </div>
+        {/* <a id="return_top" href="#top">
           <IoMdArrowDropupCircle
             size={55}
             fill="#333"
             className="fixed top-[550px] right-[100px]"
           />
-        </a>
+        </a> */}
       </div>
     </section>
   );
