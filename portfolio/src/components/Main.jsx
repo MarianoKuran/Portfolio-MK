@@ -21,7 +21,7 @@ const Main = () => {
         Fullstack Developer
       </h1>
       <div className="fixed bottom-[60px] right-[50px] h-fit w-[80px]">
-        <div className="relative flex flex-col h-fit w-full bottom-[0px] left-[0px] mb-2">
+        <div className="relative flex flex-col h-fit w-full bottom-[0px] left-[0px] mb-2 cursor-pointer">
           <a>
             <SiLinkedin size={40} fill="#333" className="fixed ml-4" />
           </a>
@@ -33,7 +33,7 @@ const Main = () => {
             LinkedIn
           </a>
         </div>
-        <div className="relative flex flex-col h-fit w-full bottom-[0px] left-[0px] mb-2">
+        <div className="relative flex flex-col h-fit w-full bottom-[0px] left-[0px] mb-2 cursor-pointer">
           <a>
             <IoLogoGithub size={48} fill="#333" className="fixed ml-3" />
           </a>
@@ -45,7 +45,7 @@ const Main = () => {
             Github
           </a>
         </div>
-        <div className="relative flex flex-col h-fit w-full bottom-[0px] left-[0px] mt-3">
+        <div className="relative flex flex-col h-fit w-full bottom-[0px] left-[0px] mt-3 cursor-pointer">
           <a>
             <MdContactPage size={50} fill="#333" className="fixed ml-3" />
           </a>
@@ -57,7 +57,7 @@ const Main = () => {
             Download cv
           </a>
         </div>
-        <div className="relative flex flex-col h-fit w-full bottom-[0px] left-[0px] mt-16">
+        <div className="relative flex flex-col h-fit w-full bottom-[0px] left-[0px] mt-16 cursor-pointer">
           <a>
             <IoMdArrowDropupCircle size={52} fill="#333" className="fixed ml-3" />
           </a>
@@ -69,13 +69,6 @@ const Main = () => {
             To top
           </a>
         </div>
-        {/* <a id="return_top" href="#top">
-          <IoMdArrowDropupCircle
-            size={55}
-            fill="#333"
-            className="fixed top-[550px] right-[100px]"
-          />
-        </a> */}
       </div>
     </section>
   );
