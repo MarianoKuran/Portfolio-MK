@@ -41,13 +41,13 @@ const Skills = () => {
   ]
 
   return (
-    <section id="Skills" className="flex flex-col items-center w-full h-[100vh] p-5">
-      <div className='flex flex-col items-center w-[70%] h-full '>
+    <section id="Skills" className="flex flex-col items-center w-full h-fit p-5">
+      <div className='flex flex-col items-center w-[70%] h-fit '>
         <div className="flex items-start w-[70%] h-[100px] my-7">
           <img  src={Skills_png} alt="Skills" className="relative z-0 h-full w-[25%] drop-shadow-xl mx-auto" />        
         </div>
-        <div className='flex items-center justify-center '>
-          <div className='flex flex-wrap items-center justify-center w-[60%] h-[300px] gap-3 p-4 '>
+        <div className='flex items-center justify-center h-fit'>
+          <div className='flex flex-wrap items-center justify-center w-[60%] h-fit gap-3 p-4 '>
             <p className='flex justify-center w-full py-3 text-4xl text-[#333] font-bolder rounded-md shadow-md'>TechSkills</p>
               {skillsT.map((s)=>{
                 return(

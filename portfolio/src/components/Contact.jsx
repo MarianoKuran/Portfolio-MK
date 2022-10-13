@@ -4,7 +4,7 @@ import { SiGmail, SiWhatsapp, SiInstagram, SiLinkedin } from "react-icons/si"
 
 const Contact = () => {
   return (
-    <section id="Contact" className="flex flex-col items-center w-full h-[100vh]">
+    <section id="Contact" className="flex flex-col items-center w-full h-fit">
       <div className='flex flex-col items-center w-[70%] h-full '>
         <div className="flex items-start w-[70%] h-[100px] my-7">
           <img src={Contact_png} alt="Skills" className="relative z-0 h-full w-[25%] drop-shadow-xl mx-auto" />        

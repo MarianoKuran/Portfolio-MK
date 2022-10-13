@@ -23,10 +23,10 @@ const ProjectCard = ({ title, img, description, tools, github, deploy }) => {
               Tecnologias utilizadas
             </p>
           </div>
-          <div>
+          <div className="flex flex-wrap">
             {tools && tools.map( (tool, i) => {
               return (
-                <span key={i}>{tool}</span>
+                <span key={i} className="mr-1 pr-2 border-r-[1px] border-[#ccc] italic">{tool}</span>
               )
             })}
           </div>
@@ -37,7 +37,7 @@ const ProjectCard = ({ title, img, description, tools, github, deploy }) => {
         <a href={github} target="_blank">
           <div
             id="icon-code-1"
-            className="flex items-center justify-center p-1 h-[50px] w-[50px] rounded-[50%] bg-[#f6f6f6] shadow-md"
+            className="flex items-center justify-center mb-8 p-1 h-[50px] w-[50px] rounded-[50%] bg-[#f6f6f6] shadow-md"
           >
             <BiCodeAlt size={35} fill={"#333"} />
           </div>
