@@ -28,7 +28,7 @@ const Main = () => {
           <a
             href="https://www.linkedin.com/in/mariano-kuran-809642236"
             target="_blank"
-            className="opacity-0 w-full h-[65px] pt-11 pl-1 duration-200 hover:opacity-100 cursor-pointer"
+            className="opacity-0 w-full h-[65px] pt-11 pl-1 duration-200 hover:opacity-100"
           >
             LinkedIn
           </a>
@@ -40,7 +40,7 @@ const Main = () => {
           <a
             href="https://github.com/MarianoKuran"
             target="_blank"
-            className="opacity-0 w-full h-[65px] pt-12 pl-[10px] duration-200 hover:opacity-100 cursor-pointer"
+            className="opacity-0 w-full h-[65px] pt-12 pl-[10px] duration-200 hover:opacity-100"
           >
             Github
           </a>
@@ -52,7 +52,7 @@ const Main = () => {
           <a
             download href={cv}
             target="_blank"
-            className="text-center opacity-0 w-full h-[90px] pt-12 duration-200 hover:opacity-100 cursor-pointer"
+            className="text-center opacity-0 w-full h-[90px] pt-12 duration-200 hover:opacity-100"
           >
             Download cv
           </a>
@@ -64,7 +64,7 @@ const Main = () => {
           <a
             href="#top"
             target="_blank"
-            className="opacity-0 w-full h-[65px] pl-[15px] pt-12 duration-200 hover:opacity-100 cursor-pointer"
+            className="opacity-0 w-full h-[65px] pl-[15px] pt-12 duration-200 hover:opacity-100"
           >
             To top
           </a>
