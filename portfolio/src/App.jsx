@@ -11,35 +11,29 @@ const App = () => {
     const logo = document.querySelector("#logo");
     const textMain = document.querySelector("#text-main");
     const About_me = document.querySelector("#About_me_png");
-    const return_top = document.querySelector("#return_top");
 
     
     window.addEventListener("scroll", () => {
       let scroll = window.scrollY;
-      return_top.style.display = "none";
       logo.style.position = "relative";
       textMain.style.position = "relative";
 
       /* move main elements */
-      logo.style.left = `${scroll / 2}px`;
-      textMain.style.right = `${scroll / 2}px`;
+      logo.style.left = `${scroll }px`;
+      textMain.style.right = `${scroll }px`;
       /* blurred main elements */
       if (0 <= scroll && scroll <= 125) {
+        logo.style.opacity = `${1 - scroll / 850}`;
+        textMain.style.opacity = `${1 - scroll / 850}`;
+      } else if (126 <= scroll && scroll <= 250) {
         logo.style.opacity = `${1 - scroll / 750}`;
         textMain.style.opacity = `${1 - scroll / 750}`;
-        return_top.style.display = "none";
-      } else if (126 <= scroll && scroll <= 250) {
+      } else if (251 <= scroll && scroll <= 375) {
         logo.style.opacity = `${1 - scroll / 650}`;
         textMain.style.opacity = `${1 - scroll / 650}`;
-        return_top.style.display = "flex";
-      } else if (251 <= scroll && scroll <= 375) {
-        logo.style.opacity = `${1 - scroll / 550}`;
-        textMain.style.opacity = `${1 - scroll / 550}`;
-        return_top.style.display = "flex";
       } else {
-        logo.style.opacity = `${1 - scroll / 550}`;
-        textMain.style.opacity = `${1 - scroll / 550}`;
-        return_top.style.display = "flex";
+        logo.style.opacity = `${1 - scroll / 650}`;
+        textMain.style.opacity = `${1 - scroll / 650}`;
       }
       /* effects about me section */
 

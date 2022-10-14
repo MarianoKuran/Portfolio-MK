@@ -11,10 +11,10 @@ const ProjectCard = ({ title, img, description, tools, github, deploy }) => {
       </div>
       
       <div className="flex flex-col items h-full w-[60%] p-4 mx-5 border-r-2 border-[#eee]">
-        <h3 className="mt-2 font-semibold text-[#333] border-b-2 border-[#ddd]">
+        <h3 className="mt-2 font-semibold text-[#333] text-3xl border-b-2 border-[#ddd]">
           {title}
         </h3>
-        <p className="mt-2 text-[#333] italic text-justify">
+        <p className="mt-2 text-[#333] italic text-justify leading-[18px]	">
           {description}
         </p>
         <div className="flex flex-col items-start h-fit mt-2">
@@ -34,22 +34,33 @@ const ProjectCard = ({ title, img, description, tools, github, deploy }) => {
       </div>
       
       <div className="flex flex-col items-center justify-around h-full w-[5%]">
-        <a href={github} target="_blank">
+        <div className="relative  flex flex-col items-center">
           <div
             id="icon-code-1"
-            className="flex items-center justify-center mb-8 p-1 h-[50px] w-[50px] rounded-[50%] bg-[#f6f6f6] shadow-md"
+            className="flex flex-col items-center justify-center p-1 h-[50px] w-[50px] rounded-[50%] bg-[#f6f6f6] shadow-md"
           >
             <BiCodeAlt size={35} fill={"#333"} />
           </div>
-        </a>
-        <a href={deploy} target="_blank">
+          <a href={github} target="_blank" className="absolute h-[70px] opacity-0 flex items-end justify-center w-full my-1 duration-200 hover:opacity-100">Code</a>
+        </div>
+        <div className="relative top-5 flex flex-col items-center">
           <div
             id="icon-code-1"
-            className="flex items-center justify-center p-1 h-[50px] w-[50px] rounded-[50%] bg-[#f6f6f6] shadow-md"
+            className="flex flex-col items-center justify-center p-1 h-[50px] w-[50px] rounded-[50%] bg-[#f6f6f6] shadow-md"
           >
             <GiBoltEye size={35} fill={"#333"} />
           </div>
-        </a>
+          <a href={deploy} target="_blank" className="absolute h-[70px] opacity-0 flex items-end justify-center w-full my-1 duration-200 hover:opacity-100">Deploy</a>
+        </div>
+        {/* <a href={deploy} target="_blank" className="opacity-0 flex flex-col text-center my-1 hover:opacity-100">
+          <div
+            id="icon-code-1"
+            className="flex items-center justify-center  p-1 h-[50px] w-[50px] rounded-[50%] bg-[#f6f6f6] shadow-md"
+          >
+            <GiBoltEye size={35} fill={"#333"} />
+          </div>
+          Deploy
+        </a> */}
       </div>
     </div>
   );
