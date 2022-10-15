@@ -13,7 +13,7 @@ const AboutMe = () => {
       <div className="flex flex-col items-start w-[70%] mt-6 p-4 text-justify text-[#444] text-lg ">
         <div className="flex">
           <p className='text-md'>Soy 
-          <a href="#cv" target='_blank' className="mx-1 font-semibold italic"> Desarrollador Web Fullstack </a>  
+          <a href="https://certificates.soyhenry.com/cert?id=04f0743a-f678-43b1-82a1-b873c4d20a70" target='_blank' className="mx-1 font-semibold italic"> Desarrollador Web Fullstack </a>  
           con afinidad por el frontend...</p>
         </div>
         <p>Pero aparte de programar, me gusta mucho leer e investigar de diferentes temas, relacionados a la musica, la psicologia, la economia y la politica.</p>
