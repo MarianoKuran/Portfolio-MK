@@ -15,14 +15,14 @@ const Projects = () => {
       </div>
 
       {/* CARD */}
-      <ProjectCard 
+      {/* <ProjectCard 
         title="Wikidogs"
         img={wikidogs}
         description="La idea general del proyecto es crear una aplicación en la cual se puedan ver distintas razas de perro junto con información relevante de las mismas utilizando una API externa y a partir de ella poder, entre otras cosas, buscar razas de perros, filtrarlas, ordenarlas y agregar nuevas razas de perros y sus respectivas caracteristicas"
         tools={[ "HTML","CSS", "React", "Redux", "Nodejs", "Express", "PostgreSQL", "sequelize" ]}
         github="https://github.com/MarianoKuran/PI-Dogs-main"
         deploy="https://wikidogs-indol.vercel.app"
-      />
+      /> */}
       <ProjectCard 
         title="Mundiapp"
         img={mundiapp}
