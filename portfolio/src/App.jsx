@@ -54,13 +54,13 @@ const App = () => {
     <>
       <Navbar />
       <Main />
-      <hr className="w-[80%] h-[1px] bg-black" />
+      <hr className="w-[80%] h-[1px] bg-[#ddd]" />
       <AboutMe />
-      <hr className="w-[80%] h-[1px] bg-black" />
+      <hr className="w-[80%] h-[1px] bg-[#ddd]" />
       <Projects />
-      <hr className="w-[80%] h-[1px] bg-black" />
+      <hr className="w-[80%] h-[1px] bg-[#ddd]" />
       <Skills />
-      <hr className="w-[80%] h-[1px] bg-black" />
+      <hr className="w-[80%] h-[1px] bg-[#ddd]" />
       <Contact />
     </>
   );

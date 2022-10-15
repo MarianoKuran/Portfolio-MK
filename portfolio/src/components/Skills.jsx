@@ -48,7 +48,7 @@ const Skills = () => {
         </div>
         <div className='flex items-center justify-center h-fit'>
           <div className='flex flex-wrap items-center justify-center w-[60%] h-fit gap-3 p-4 '>
-            <p className='flex justify-center w-full py-3 text-4xl text-[#333] font-bolder rounded-md shadow-md'>TechSkills</p>
+            <p className='flex justify-center w-full py-3 text-4xl text-[#333] font-bolder rounded-md shadow-md'>HardSkills</p>
               {skillsT.map((s)=>{
                 return(
                   <div className='flex flex-col items-center'>
