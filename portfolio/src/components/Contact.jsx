@@ -65,7 +65,7 @@ const Contact = () => {
             <div className='flex flex-col w-[50px] items-center '>
               <SiWhatsapp size={35} fill="#333" className='absolute' />
               <a
-                href=" https://wa.me/3854842775"
+                href="https://bit.ly/3TpnpKp"
                 target="_blank"
                 className="relative opacity-0 flex items-end top-0 h-[65px] duration-100 hover:opacity-100"
                 >
