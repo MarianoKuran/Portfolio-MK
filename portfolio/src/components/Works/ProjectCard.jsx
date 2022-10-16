@@ -53,10 +53,10 @@ const ProjectCard = ({ title, img, description, tools, github, deploy }) => {
           <a href={deploy} target="_blank" className="absolute h-[70px] opacity-0 flex items-end justify-center w-full my-1 duration-200 hover:opacity-100">Deploy</a>
         </div>
         {/* buttons mobile */}
-        <a href={github} target="_blank" className="flex items-end justify-center h-[40px] w-full mt-3">
+        <a href={github} target="_blank" className="md:hidden flex items-end justify-center h-[40px] w-full mt-3">
           <button className="h-full w-[120px] font-semibold bg-[#333] text-[#f6f6f6] rounded-sm">Ver Codigo</button>
         </a>
-        <a href={deploy} target="_blank" className="flex items-end justify-center h-[40px] w-full mt-3">
+        <a href={deploy} target="_blank" className="md:hidden flex items-end justify-center h-[40px] w-full mt-3">
           <button className="h-full w-[120px] font-semibold bg-[#333] text-[#f6f6f6] rounded-sm">Ver Deploy</button>
         </a>
       </div>
