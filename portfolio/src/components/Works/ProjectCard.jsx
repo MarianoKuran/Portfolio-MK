@@ -4,13 +4,13 @@ import {GiBoltEye} from "react-icons/gi"
 
 const ProjectCard = ({ title, img, description, tools, github, deploy }) => {
   return (
-    <div className="flex items-center  w-[70%] h-fit p-4 rounded-sm shadow-md">
+    <div className="flex flex-col md:flex-row items-center w-full md:w-[70%] h-fit p-4 rounded-sm shadow-md">
       
-      <div className="flex items-center h-fit w-[30%] shadow-md">
+      <div className="flex items-center h-fit w-full md:w-[30%] shadow-md">
         <img src={img} alt="Work picture" />
       </div>
       
-      <div className="flex flex-col items h-full w-[60%] p-4 mx-5 border-r-2 border-[#eee]">
+      <div className="flex flex-col items h-full w-full md:w-[60%] p-4 mx-5 border-b-2 border-[#eee]">
         <h3 className="mt-2 font-semibold text-[#333] text-3xl border-b-2 border-[#ddd]">
           {title}
         </h3>
@@ -33,8 +33,8 @@ const ProjectCard = ({ title, img, description, tools, github, deploy }) => {
         </div>
       </div>
       
-      <div className="flex flex-col items-center justify-around h-full w-[5%]">
-        <div className="relative  flex flex-col items-center">
+      <div className="flex md:flex-col items-center md:justify-around h-fit md:h-full w-full md:w-[5%]">
+        <div className="relative hidden md:flex flex-col items-center">
           <div
             id="icon-code-1"
             className="flex flex-col items-center justify-center p-1 h-[50px] w-[50px] rounded-[50%] bg-[#f6f6f6] shadow-md"
@@ -43,7 +43,7 @@ const ProjectCard = ({ title, img, description, tools, github, deploy }) => {
           </div>
           <a href={github} target="_blank" className="absolute h-[70px] opacity-0 flex items-end justify-center w-full my-1 duration-200 hover:opacity-100">Code</a>
         </div>
-        <div className="relative top-5 flex flex-col items-center">
+        <div className="relative top-5 hidden md:flex flex-col items-center">
           <div
             id="icon-code-1"
             className="flex flex-col items-center justify-center p-1 h-[50px] w-[50px] rounded-[50%] bg-[#f6f6f6] shadow-md"
@@ -52,15 +52,13 @@ const ProjectCard = ({ title, img, description, tools, github, deploy }) => {
           </div>
           <a href={deploy} target="_blank" className="absolute h-[70px] opacity-0 flex items-end justify-center w-full my-1 duration-200 hover:opacity-100">Deploy</a>
         </div>
-        {/* <a href={deploy} target="_blank" className="opacity-0 flex flex-col text-center my-1 hover:opacity-100">
-          <div
-            id="icon-code-1"
-            className="flex items-center justify-center  p-1 h-[50px] w-[50px] rounded-[50%] bg-[#f6f6f6] shadow-md"
-          >
-            <GiBoltEye size={35} fill={"#333"} />
-          </div>
-          Deploy
-        </a> */}
+        {/* buttons mobile */}
+        <a href={github} target="_blank" className="flex items-end justify-center h-[40px] w-full mt-3">
+          <button className="h-full w-[120px] font-semibold bg-[#333] text-[#f6f6f6] rounded-sm">Ver Codigo</button>
+        </a>
+        <a href={deploy} target="_blank" className="flex items-end justify-center h-[40px] w-full mt-3">
+          <button className="h-full w-[120px] font-semibold bg-[#333] text-[#f6f6f6] rounded-sm">Ver Deploy</button>
+        </a>
       </div>
     </div>
   );

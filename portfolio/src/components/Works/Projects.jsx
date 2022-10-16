@@ -10,8 +10,9 @@ const Projects = () => {
   return (
     <section id="Works" className="flex flex-col items-center w-full h-fit p-5">
       
-      <div className="flex flex-col items-start w-[70%] h-[220px] mt-14">
-        <img src={Works} alt="Works" className="relative z-0 h-[50%] w-[25%] drop-shadow-xl mx-auto" />        
+      <div className="flex flex-col items-start w-full md:w-[70%] h-[60px] md:h-[220px] mt-14">
+        <p className="md:hidden ml-4 pr-3 text-2xl font-bolder border-r-[1px] border-[#333]"> MY WORKS</p>
+        <img src={Works} alt="Works" className="hidden md:block relative z-0 h-[50%] w-[25%] drop-shadow-xl mx-auto" />        
       </div>
 
       {/* CARD */}
