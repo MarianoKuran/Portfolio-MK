@@ -3,14 +3,15 @@ import About_Me from "../images/AboutMe.png"
 
 const AboutMe = () => {
   return (
-    <section id="About_me" className="flex flex-col items-center w-full h-[100vh] p-5">
+    <section id="About_me" className="flex flex-col items-center w-full h-fit p-5">
       
-      <div className="flex flex-col items-start w-[70%] h-[220px] mt-14 pb-4">
-        <img id="About_me_png" src={About_Me} alt="About me" className="relative z-0 h-[50%] w-[25%] drop-shadow-xl mx-auto" />        
-        <p id="citado" className="my-4 text-[#888] italic">"Uno no puede elegir sabiamente en la vida a menos que se atreva a escucharse a si mismo, a su propio yo, en cada momento de su vida."</p>
-        <p id="author" className="ml-[6em] text-[#888] italic">- A. Maslow</p>
+      <div className="flex flex-col items-start w-[90%] md:w-[70%] h-[220px] mt-14 pb-4">
+        <p className="md:hidden pr-3 text-2xl font-bolder border-r-[1px] border-[#333]">ABOUT ME</p>
+        <img id="About_me_png" src={About_Me} alt="About me" className="hidden md:block relative z-0 h-[50%] w-[25%] drop-shadow-xl mx-auto" />        
+        <p id="citado" className="mt-4 md:my-4 text-justify text-[#888] italic">"Uno no puede elegir sabiamente en la vida a menos que se atreva a escucharse a si mismo, a su propio yo, en cada momento de su vida."</p>
+        <p id="author" className="text-[#888] italic">- A. Maslow</p>
       </div>
-      <div className="flex flex-col items-start w-[70%] mt-6 p-4 text-justify text-[#444] text-lg ">
+      <div className="flex flex-col items-start w-full md:w-[70%] mt-6 p-4 text-justify text-[#444] text-lg ">
         <div className="flex">
           <p className='text-md'>Soy 
           <a href="https://certificates.soyhenry.com/cert?id=04f0743a-f678-43b1-82a1-b873c4d20a70" target='_blank' className="mx-1 font-semibold italic"> Desarrollador Web Fullstack </a>  
