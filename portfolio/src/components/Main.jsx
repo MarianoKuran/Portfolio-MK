@@ -22,11 +22,11 @@ const Main = () => {
         id="logo"
         src={MKlogo}
         alt="Mariano Kuran personal logo"
-        className="h-[500px] w-[1100px] 2xl:h-[1000px] 2xl:w-[2100px] mt-[-80px] drop-shadow-xl"
+        className="h-[300px] md:h-[500px] md:w-[1100px] 2xl:h-[1000px] 2xl:w-[2100px] mt-[-80px] drop-shadow-xl"
       />
       <h1
         id="text-main"
-        className="mt-[-40px] text-center tracking-tighter text-4xl 2xl:text-[8rem] text-[#444] font-bold drop-shadow-md "
+        className="md:mt-[-40px] text-center tracking-tighter text-3xl md:text-4xl 2xl:text-[8rem] text-[#444] font-bold drop-shadow-md "
       >
         Fullstack Developer
       </h1>
