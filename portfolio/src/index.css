@@ -19,3 +19,11 @@ body {
   align-items: center;
 }
 
+/* NAVBAR */
+.header_a{
+  @apply hidden md:flex items-center justify-center w-[20%] h-full text-lg 2xl:text-4xl text-[#555] tracking-wider duration-200 hover:border-b-2 hover:border-[#666] hover:font-semibold hover:drop-shadow-sm
+}
+.header_logo{
+  background-image: url('./images/logoMK.svg');
+  background-size: cover;
+}

@@ -1,5 +1,8 @@
-import React from 'react'
-import MKlogo from "../images/logoMK.svg"
+import React, { useState }  from 'react'
+import {BsFillPersonLinesFill} from 'react-icons/bs'
+import {MdWork} from 'react-icons/md'
+import {GiTechnoHeart} from 'react-icons/gi'
+import {GrContact} from 'react-icons/gr'
 
 const Navbar = () => {
 
@@ -13,25 +16,40 @@ const Navbar = () => {
       behavior: "smooth"
     }); 
   }
-
+  
   return (
-    <header id='top' className='w-[100vw]'>
-      <nav className='flex items-center justify-center w-full h-[95px] 2xl:h-[150px] shadow-sm'>
-        <div className='sticky top-0 flex items-center justify-center h-full w-[70%] gap-6'>
-          <a onClick={ e => clickHandler(e)} href="#About_me" className='flex items-center justify-center w-[20%] h-full text-lg 2xl:text-4xl text-[#555] tracking-wider duration-200 hover:border-b-2 hover:border-[#666] hover:font-semibold hover:drop-shadow-sm'>
-             About me
+    <header id='top' className='fixed bottom-0 md:static w-[100vw]  bg-[#f6f6f6]'>
+      <nav className='fixed  bottom-0  md:static flex items-center justify-center w-full h-[80px] md:h-[95px] 2xl:h-[150px] shadow-sm bg-[#f6f6f6]'>
+        <div className='hidden md:flex md:items-center md:justify-center h-full w-full md:w-[70%] gap-6'>
+          <a onClick={ e => clickHandler(e)} href="#About_me" className='header_a'>
+            About me
           </a>
-          <a onClick={ e => clickHandler(e)} href="#Works" className='flex items-center justify-center w-[20%] h-full text-lg 2xl:text-4xl text-[#555] tracking-wider duration-200 hover:border-b-2 hover:border-[#666] hover:font-semibold hover:drop-shadow-sm'>
-             Works
+          <a onClick={ e => clickHandler(e)} href="#Works" className='header_a'>
+            Works
           </a>
 
-          <img src={MKlogo} alt="Mariano Kuran logo personal" className='h-[140px] 2xl:h-[240px] w-[20%] ml-2' />
+          <div className="h-full 2xl:h-[240px] w-[6rem] ml-4 header_logo"></div>
 
-          <a onClick={ e => clickHandler(e)} href="#Skills" className='flex items-center justify-center w-[20%] h-full text-lg 2xl:text-4xl text-[#555] tracking-wider duration-200 hover:border-b-2 hover:border-[#666] hover:font-semibold hover:drop-shadow-sm'>
-             Skills
+          <a onClick={ e => clickHandler(e)} href="#Skills" className='header_a'>
+            Skills
           </a>
-          <a onClick={ e => clickHandler(e)} href="#Contact" className='flex items-center justify-center w-[20%] h-full text-lg 2xl:text-4xl text-[#555] tracking-wider duration-200 hover:border-b-2 hover:border-[#666] hover:font-semibold hover:drop-shadow-sm'>
+          <a onClick={ e => clickHandler(e)} href="#Contact" className='header_a'>
             Contact
+          </a>
+        </div>
+        {/* nav Mobile */}
+        <div className='absolute bottom-0 md:hidden flex items-center justify-around h-full w-full bg-[#f6f6f6]'>
+          <a onClick={ e => clickHandler(e)} href="#About_me" className='flex items-center justify-center h-full w-[25%]  bg-[#f6f6f6]'>
+            <BsFillPersonLinesFill size={32} fill="#333" />
+          </a>
+          <a onClick={ e => clickHandler(e)} href="#Works" className='flex items-center justify-center h-full w-[25%]  bg-[#f6f6f6]'>
+            <MdWork size={32}  fill="#333"/>
+          </a>
+          <a onClick={ e => clickHandler(e)} href="#Skills" className='flex items-center justify-center h-full w-[25%]  bg-[#f6f6f6]'>
+            <GiTechnoHeart size={32}  fill="#333"/>
+          </a>
+          <a onClick={ e => clickHandler(e)} href="#Contact" className='flex items-center justify-center h-full w-[25%]  bg-[#f6f6f6]'>
+            <GrContact size={32} fill="#333" />
           </a>
         </div>
       </nav>

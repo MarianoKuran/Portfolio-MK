@@ -30,7 +30,7 @@ const Main = () => {
       >
         Fullstack Developer
       </h1>
-      <div className="absolute z-10 xl:bottom-[20%] 2xl:bottom-[30%] right-[50px] 2xl:right-[120px] h-[350px] 2xl:h-[650px] w-[80px]">
+      <div className="hidden md:block absolute z-10 xl:bottom-[20%] 2xl:bottom-[30%] right-[50px] 2xl:right-[120px] h-[350px] 2xl:h-[650px] w-[80px]">
         <div className="relative z-10 flex flex-col h-[25%] w-full mb-2 cursor-pointer">
           <a>
             <SiLinkedin size={40} fill="#333" className="fixed ml-4 2xl:h-[90px] 2xl:w-[90px]" />
